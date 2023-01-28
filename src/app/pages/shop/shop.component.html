@@ -1,0 +1,30 @@
+<!--SHOP SECTION-->
+
+<div class="heading_containers" id="shop_section">Shop Stickers!</div>
+<div class="filter_container">
+  <!--div class="myBtnContainer">
+    <span class="btn_filter">All</span>
+    <span class="btn_filter">African Spice</span>
+    <span class="btn_filter">Positive Mojo</span>
+    <span class="btn_filter">Custom</span>
+  </div-->
+</div>
+
+<div class="container_shop">
+  <div class="product_container" *ngFor="let product of products">
+    <app-product-card [product]="product"></app-product-card>
+  </div>
+</div>
+<div class="popup_image">
+  <span onclick="hidePopup()">&times;</span>
+  <div class="open_card">
+    <div></div>
+    <img src="./assets/images/ig-1.png" alt="" id="popup-img" />
+    <div class="open_card_description">
+      <div class="price">Ghc5</div>
+      <button class="open_popup_addtocart">
+        ADD TO CART<i class="fa fa-shopping-cart"></i>
+      </button>
+    </div>
+  </div>
+</div>

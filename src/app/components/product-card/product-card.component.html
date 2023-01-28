@@ -1,0 +1,9 @@
+<div class="product_card">
+  <img class="product-img" [src]="product.image" alt="ABEG" />
+  <div class="icon-container" (click)="addProductToCart()">
+    <a class="cart-icon">
+      <i class="fa fa-shopping-cart"></i>
+      <p>Ghc {{ product.price }}</p>
+    </a>
+  </div>
+</div>

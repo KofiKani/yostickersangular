@@ -1,0 +1,209 @@
+.container_checkout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #ff0062 60%, #cc0053 40.1%);
+
+  position: relative;
+}
+
+.container_checkout form {
+  padding: 20px;
+  width: 700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container_checkout form .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.container_checkout form .row .col {
+  flex: 1 1 250px;
+}
+
+.container_checkout form .row .col .title {
+  font-size: 20px;
+  color: #333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container_checkout form .row .col .inputBox {
+  margin: 15px 0;
+}
+
+.container_checkout form .row .col .inputBox span {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container_checkout form .row .col .inputBox input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container_checkout form .row .col .inputBox input:focus {
+  border: 1px solid #000;
+}
+
+.container_checkout form .row .col .flex {
+  display: flex;
+  gap: 15px;
+}
+
+.container_checkout form .row .col .flex .inputBox {
+  margin-top: 5px;
+}
+
+.container_checkout form .row .col .inputBox img {
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container_checkout form .submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  background: #7f003a;
+  color: #ffff00;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.container_checkout form .submit-btn:hover {
+  color: white;
+  background: #4c0023;
+}
+
+.yo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yo {
+  display: flex;
+
+  margin-top: 10px;
+  font-family: "sonorous", sans-serif;
+  text-transform: lowercase;
+}
+
+.show-btn {
+  background: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #3498db;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container_thankyou {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="button"] {
+  display: block;
+}
+.container_thankyou {
+  display: none;
+  background: #fff;
+
+  width: auto;
+  padding: 30px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+#show:focus ~ .container_thankyou {
+  display: block;
+}
+.container_thankyou .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 20px;
+  padding: 20px;
+
+  border-radius: 50%;
+  cursor: pointer;
+  color: #4c0023;
+  background-color: white;
+}
+.container_thankyou .close-btn:hover {
+  color: #3498db;
+}
+.container_thankyou .text {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+
+  background-color: #4c0023;
+  color: #ffff00;
+
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+.container_thankyou form {
+  margin-top: -20px;
+}
+.container_thankyou form .data {
+  height: 45px;
+  width: 100%;
+  margin: 40px 0;
+}
+
+.thankyou_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: auto;
+}
+
+.thankyou_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 150px;
+  color: #ff0062;
+}
+
+.thankyou_message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: #4c0023;
+}
+
+@media (max-width: 960px) {
+  .container_thankyou {
+    width: 300px;
+    padding: 20px;
+  }
+  .thankyou_icon {
+    font-size: 90px;
+  }
+}

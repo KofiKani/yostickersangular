@@ -1,0 +1,217 @@
+button {
+  width: auto;
+  height: auto;
+}
+
+.myBtnContainer {
+  display: flex;
+  justify-content: space-around;
+
+  width: 95%;
+  height: 100%;
+
+  border-radius: 50px;
+
+  background-color: #ffff00;
+}
+
+button .filterDiv {
+  display: none; /* Hidden by default */
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  width: auto;
+  height: auto;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: flex;
+  height: auto;
+  width: auto;
+}
+
+/* Style the buttons */
+#myBtnContainer.btn_filter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background: #ffff00;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+
+  width: 100%;
+  height: 100%;
+
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "comfortaa", sans-serif;
+  font-weight: bold;
+
+  color: #ffff00;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn_filter:hover {
+  color: #cccc00;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add a dark background to the active button */
+.btn_filter.active {
+  color: #ffff00;
+}
+
+.open_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  position: fixed;
+  top: 30%;
+  left: 40em;
+
+  width: 500px;
+  height: 500px;
+  background-color: white;
+}
+
+.open_popup_addtocart {
+  display: flex;
+  justify-content: space-between;
+
+  width: 270px;
+  font-size: 20px;
+}
+
+.open_card_description {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin: 50px;
+
+  font-size: 50px;
+  height: 80px;
+  width: 100%;
+}
+#popup-img {
+  position: relative;
+}
+
+.popup_image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.85);
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  display: none;
+}
+
+.popup_image span {
+  position: absolute;
+  top: 120px;
+  right: 40px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: white;
+  cursor: pointer;
+}
+
+.popup_image img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  border: 2px solid white;
+  object-fit: cover;
+}
+
+.price {
+  font-family: Tahoma, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #7f003a;
+}
+
+/*MOBILE SCREEN*/
+@media (max-width: 400px) {
+  .open_card {
+    top: 50%;
+    left: 10%;
+
+    width: 300px;
+    height: 300px;
+  }
+
+  .btn_filter {
+    font-size: 16px;
+  }
+
+  #myBtnContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    flex-wrap: wrap;
+
+    border-radius: 0;
+  }
+
+  .btn_filter {
+    width: 40%;
+    height: auto;
+
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 960px) {
+  .open_card {
+    top: 40vh;
+    left: 30vw;
+
+    width: 400px;
+    height: 400px;
+  }
+
+  .btn_filter {
+    width: 40%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+
+    font-size: 20px;
+  }
+
+  #myBtnContainer {
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 961px) {
+  .open_card {
+    top: 30vh;
+    left: 40vw;
+
+    width: 500px;
+    height: 500px;
+  }
+}
